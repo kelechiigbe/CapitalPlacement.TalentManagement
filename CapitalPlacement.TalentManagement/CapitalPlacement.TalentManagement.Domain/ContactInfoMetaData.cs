@@ -9,8 +9,8 @@ namespace CapitalPlacement.TalentManagement.Domain
         {
             Label = label ?? string.Empty;
         }
-        public bool IsInternal { get; set; }
-        public bool IsHidden { get; set; }
+        public bool IsInternal { get; set; } = false;
+        public bool IsHidden { get; set; } = false;
     }
 
     public class LabelInfoMetaData

@@ -1,5 +1,4 @@
-﻿
-namespace CapitalPlacement.TalentManagement.Domain
+﻿namespace CapitalPlacement.TalentManagement.Domain
 {
     /// <summary>
     /// Represents a Yes/No question derived from BaseQuestion.

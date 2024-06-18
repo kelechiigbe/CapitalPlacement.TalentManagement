@@ -1,14 +1,10 @@
 ﻿using CapitalPlacement.TalentManagement.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapitalPlacement.TalentManagement.Application.ViewModel
 {
-    public class CreateProgramResponse
+    public class ProgramResponse
     {
+
         public Guid Id { get; set; }
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
@@ -21,11 +17,11 @@ namespace CapitalPlacement.TalentManagement.Application.ViewModel
         public ContactInfoMetaData IdNumber { get; set; } = new ContactInfoMetaData("Id Number");
         public ContactInfoMetaData DateOfBirth { get; set; } = new ContactInfoMetaData("Date Of Birth");
         public ContactInfoMetaData Gender { get; set; } = new ContactInfoMetaData("Gender");
-        public List<ParagraphQuestion>? ParagraphQuestions { get; set; }
-        public List<YesNoQuestion>? YesNoQuestions { get; set; }
-        public List<NumericQuestion>? NumericQuestions { get; set; }
-        public List<DateQuestion>? DateQuestions { get; set; }
-        public List<DropdownsTemplate>? DropdownQuestions { get; set; }
-        public List<MultiChoiceQuestionTemplate>? MultiChoiceQuestions { get; set; }
+        public List<ParagraphQuestion> ParagraphQuestions { get; set; }
+        public List<YesNoQuestion> YesNoQuestions { get; set; }
+        public List<NumericQuestion> NumericQuestions { get; set; }
+        public List<DateQuestion> DateQuestions { get; set; }
+        public List<DropdownsTemplate> DropdownQuestions { get; set; }
+        public List<MultiChoiceQuestionTemplate> MultiChoiceQuestions { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using CapitalPlacement.TalentManagement.Domain;
 
 namespace CapitalPlacement.TalentManagement.Application.ViewModel
 {
-    public class CreateApplicationResponse
+    public class ApplicationResponse
     {
         public Guid Id { get; set; } = Guid.NewGuid(); 
         public string FirstName { get; set; }

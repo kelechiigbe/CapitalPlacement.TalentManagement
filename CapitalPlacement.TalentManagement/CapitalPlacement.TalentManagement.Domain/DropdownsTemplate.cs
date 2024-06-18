@@ -10,7 +10,7 @@
             Type = Enums.QuestionType.DropDown;
         }
 
-        public HashSet<string> Choice { get; set; }
+        public List<string> Choice { get; set; }
 
         public bool EnableOtherOption { get; set; }
     }
