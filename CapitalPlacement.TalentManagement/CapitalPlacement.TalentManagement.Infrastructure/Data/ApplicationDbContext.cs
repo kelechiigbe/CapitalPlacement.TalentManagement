@@ -24,6 +24,7 @@ namespace CapitalPlacement.TalentManagement.Infrastructure.Data
         /// Gets or sets the DbSet for Programs entity.
         /// </summary>
         public DbSet<Program> Programs { get; set; }
+        public DbSet<ApplicationInformation> ApplicationInformations { get; set; }
 
         /// <summary>
         /// Customizes the model using the provided modelBuilder.

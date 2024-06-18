@@ -5,15 +5,18 @@ namespace CapitalPlacement.TalentManagement.Application.FluentValidators
     /// <summary>
     /// Validator for the CreateProgramViewModel class.
     /// </summary>
-    public class CreateProgramViewModelValidator : AbstractValidator<CreateProgramRequest>
+    public class CreateProgramRequestValidator : AbstractValidator<CreateProgramRequest>
     {
         /// <summary>
-        /// Validates the Title and Description properties.
+        /// Validates the Title, Description , First Name, Last Name and Email properties.
         /// </summary>
-        public CreateProgramViewModelValidator()
+        public CreateProgramRequestValidator()
         {
             RuleFor(program => program.Title).NotEmpty();
             RuleFor(program => program.Description).NotEmpty();
+            RuleFor(program => program.FirstName.Label).NotEmpty();
+            RuleFor(program => program.LastName.Label).NotEmpty();
+            RuleFor(program => program.Email.Label).NotEmpty();
         }
     }
 }

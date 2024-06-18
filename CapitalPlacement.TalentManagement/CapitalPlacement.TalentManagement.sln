@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapitalPlacement.TalentMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapitalPlacement.TalentManagement.Infrastructure", "CapitalPlacement.TalentManagement.Infrastructure\CapitalPlacement.TalentManagement.Infrastructure.csproj", "{AFCDC354-6AC1-49CA-B02F-E5C9B40BDE5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapitalPlacement.TalentManagement.Tests", "CapitalPlacement.TalentManagement.Tests\CapitalPlacement.TalentManagement.Tests.csproj", "{C5B216EF-D7BB-4087-A4D5-BE00C26189E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AFCDC354-6AC1-49CA-B02F-E5C9B40BDE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFCDC354-6AC1-49CA-B02F-E5C9B40BDE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFCDC354-6AC1-49CA-B02F-E5C9B40BDE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B216EF-D7BB-4087-A4D5-BE00C26189E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B216EF-D7BB-4087-A4D5-BE00C26189E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B216EF-D7BB-4087-A4D5-BE00C26189E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B216EF-D7BB-4087-A4D5-BE00C26189E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

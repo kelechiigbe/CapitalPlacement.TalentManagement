@@ -27,7 +27,6 @@ namespace CapitalPlacement.TalentManagement.Infrastructure.Extensions
         /// <returns>The modified service collection.</returns>
         public static IServiceCollection AddInfrastructureServices<TContext>(this IServiceCollection services, string accountEndPoint, string accountKey, string databaseName) where TContext : DbContext
         {
-            // AddDbContextPool and other service registrations
 
             services.AddDbContextPool<TContext>(options =>
             {
@@ -36,7 +35,8 @@ namespace CapitalPlacement.TalentManagement.Infrastructure.Extensions
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProgramRepository, ProgramRepository>();
- 
+            services.AddScoped<IApplicationRepository, ApplicationRepository>();
+
 
             return services;
 

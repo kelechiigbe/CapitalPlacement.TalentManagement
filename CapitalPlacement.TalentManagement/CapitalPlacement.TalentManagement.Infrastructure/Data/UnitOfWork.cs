@@ -15,12 +15,18 @@ namespace CapitalPlacement.TalentManagement.Infrastructure.Data
         public IProgramRepository Programs { get; }
 
         /// <summary>
+        /// Gets the application information repository.
+        /// </summary>
+        public IApplicationRepository Applications { get; }
+
+        /// <summary>
         /// Initializes a new instance of the UnitOfWork class.
         /// </summary>
-        public UnitOfWork(ApplicationDbContext appContext, IProgramRepository programRepository)
+        public UnitOfWork(ApplicationDbContext appContext, IProgramRepository programRepository, IApplicationRepository applications)
         {
             _context = appContext;
             Programs = programRepository;
+            Applications = applications;
         }
 
         /// <summary>

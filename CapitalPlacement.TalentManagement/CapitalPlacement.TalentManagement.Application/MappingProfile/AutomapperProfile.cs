@@ -9,7 +9,10 @@ namespace CapitalPlacement.TalentManagement.Application.MappingProfile
         public AutomapperProfile() { 
 
             CreateMap<CreateProgramRequest, Program>().ReverseMap();
+            CreateMap<CreateProgramResponse, Program>().ReverseMap();
 
+            CreateMap<CreateApplicationRequest, ApplicationInformation>().ReverseMap();
+            CreateMap<CreateApplicationResponse, ApplicationInformation>().ReverseMap();
         }
     }
 }

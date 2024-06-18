@@ -2,9 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CapitalPlacement.TalentManagement.Domain;
 
 namespace CapitalPlacement.TalentManagement.Infrastructure.Data.Configurations
@@ -17,7 +14,7 @@ namespace CapitalPlacement.TalentManagement.Infrastructure.Data.Configurations
         /// <summary>
         /// Configures the properties of the Program entity.
         /// </summary>
-        /// <param name="builder">Entity type builder for Author.</param>
+        /// <param name="builder">Entity type builder for Program.</param>
         public void Configure(EntityTypeBuilder<Program> builder)
         {
             builder.Property(p => p.Title)

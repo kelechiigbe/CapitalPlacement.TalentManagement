@@ -9,6 +9,11 @@ namespace CapitalPlacement.TalentManagement.Application.Interface
         IProgramRepository Programs { get; }
 
         /// <summary>
+        /// Gets the repository for managing Applications.
+        /// </summary>
+        IApplicationRepository Applications { get; }
+
+        /// <summary>
         /// Saves changes synchronously.
         /// </summary>
         int Complete();

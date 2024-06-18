@@ -2,10 +2,10 @@
 
 namespace CapitalPlacement.TalentManagement.Domain
 {
-    public class ContactInfo: LabelInfo
+    public class ContactInfoMetaData: LabelInfoMetaData
     {
-        public ContactInfo() { }
-        public ContactInfo(string label)
+        public ContactInfoMetaData() { }
+        public ContactInfoMetaData(string label)
         {
             Label = label ?? string.Empty;
         }
@@ -13,10 +13,10 @@ namespace CapitalPlacement.TalentManagement.Domain
         public bool IsHidden { get; set; }
     }
 
-    public class LabelInfo
+    public class LabelInfoMetaData
     {
-        public LabelInfo() { }
-        public LabelInfo(string label)
+        public LabelInfoMetaData() { }
+        public LabelInfoMetaData(string label)
         {
             Label = label ?? string.Empty;
         }
