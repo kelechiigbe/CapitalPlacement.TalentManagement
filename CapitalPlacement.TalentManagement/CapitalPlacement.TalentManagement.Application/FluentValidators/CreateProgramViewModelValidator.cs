@@ -5,7 +5,7 @@ namespace CapitalPlacement.TalentManagement.Application.FluentValidators
     /// <summary>
     /// Validator for the CreateProgramViewModel class.
     /// </summary>
-    public class CreateProgramViewModelValidator : AbstractValidator<CreateProgramViewModel>
+    public class CreateProgramViewModelValidator : AbstractValidator<CreateProgramRequest>
     {
         /// <summary>
         /// Validates the Title and Description properties.
