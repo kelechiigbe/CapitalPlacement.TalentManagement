@@ -17,8 +17,12 @@ namespace CapitalPlacement.TalentManagement.Application.Extensions
         /// <returns>The updated service collection.</returns>
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            return services.AddFluentValidationAutoValidation()
+             services.AddFluentValidationAutoValidation()
                           .AddValidatorsFromAssemblyContaining<CreateProgramViewModelValidator>();
+
+            services.AddAutoMapper(typeof(CreateProgramViewModelValidator).Assembly);
+
+            return services;
         }
     }
 }
