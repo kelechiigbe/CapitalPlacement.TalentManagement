@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CapitalPlacement.TalentManagement.Domain
+﻿namespace CapitalPlacement.TalentManagement.Domain
 {
+    /// <summary>
+    /// Represents a dropdown template question derived from BaseQuestion.
+    /// Sets the question type to Enums.QuestionType.Dropdown.
+    /// </summary>
     public class DropdownsTemplate: BaseQuestion
     {
         public DropdownsTemplate() {

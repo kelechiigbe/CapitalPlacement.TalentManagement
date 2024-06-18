@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace CapitalPlacement.TalentManagement.Domain
 {
-    public class MultiChoiceQuestionTemplate: DropdownsTemplate
+    /// <summary>
+    /// Represents a template for a multiple-choice question derived from DropdownsTemplate.
+    /// Sets the question type to Enums.QuestionType.DropdownsTemplate.
+    /// </summary>
+    public class MultiChoiceQuestionTemplate : DropdownsTemplate
     {
-        public MultiChoiceQuestionTemplate() {
+        public MultiChoiceQuestionTemplate()
+        {
 
             Type = Enums.QuestionType.MultipleChoice;
         }
@@ -16,3 +16,4 @@ namespace CapitalPlacement.TalentManagement.Domain
         public int MaxChoiceAllowed { get; set; }
     }
 }
+

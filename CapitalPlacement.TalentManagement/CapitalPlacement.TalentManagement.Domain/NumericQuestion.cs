@@ -1,9 +1,9 @@
-﻿
-/// <summary>
-/// Represents a numeric question that is of type Number.
-/// </summary>
-namespace CapitalPlacement.TalentManagement.Domain
+﻿namespace CapitalPlacement.TalentManagement.Domain
 {
+    /// <summary>
+    /// Represents a numeric question derived from BaseQuestion.
+    /// Sets the question type to Enums.QuestionType.Number.
+    /// </summary>
     public class NumericQuestion : BaseQuestion
     {
         public NumericQuestion()
