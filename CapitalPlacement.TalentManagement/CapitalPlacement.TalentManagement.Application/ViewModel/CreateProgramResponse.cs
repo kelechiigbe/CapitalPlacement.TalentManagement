@@ -1,18 +1,15 @@
 ﻿using CapitalPlacement.TalentManagement.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CapitalPlacement.TalentManagement.Application.ViewModel
 {
-    public class CreateProgramRequest
+    public class CreateProgramResponse
     {
-        public CreateProgramRequest() { 
-
-            DropdownQuestions = new List<DropdownsTemplate>();
-            MultiChoiceQuestions = new List<MultiChoiceQuestionTemplate>();
-            ParagraphQuestions = new List<ParagraphQuestion>();
-            YesNoQuestions = new List<YesNoQuestion>();
-            DateQuestions = new List<DateQuestion>();
-            NumericQuestions = new List<NumericQuestion>();
-         }
+        public Guid Id { get; set; }
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public LabelInfoMetaData FirstName { get; set; } = new LabelInfoMetaData("First Name");
@@ -24,11 +21,11 @@ namespace CapitalPlacement.TalentManagement.Application.ViewModel
         public ContactInfoMetaData IdNumber { get; set; } = new ContactInfoMetaData("Id Number");
         public ContactInfoMetaData DateOfBirth { get; set; } = new ContactInfoMetaData("Date Of Birth");
         public ContactInfoMetaData Gender { get; set; } = new ContactInfoMetaData("Gender");
-        public List<ParagraphQuestion> ParagraphQuestions { get; set; }
-        public List<YesNoQuestion> YesNoQuestions { get; set; }
-        public List<NumericQuestion> NumericQuestions { get; set; }
-        public List<DateQuestion> DateQuestions { get; set; }
-        public List<DropdownsTemplate> DropdownQuestions { get; set; }
-        public List<MultiChoiceQuestionTemplate> MultiChoiceQuestions { get; set; }
+        public List<ParagraphQuestion>? ParagraphQuestions { get; set; }
+        public List<YesNoQuestion>? YesNoQuestions { get; set; }
+        public List<NumericQuestion>? NumericQuestions { get; set; }
+        public List<DateQuestion>? DateQuestions { get; set; }
+        public List<DropdownsTemplate>? DropdownQuestions { get; set; }
+        public List<MultiChoiceQuestionTemplate>? MultiChoiceQuestions { get; set; }
     }
 }
